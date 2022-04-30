@@ -13,7 +13,7 @@ epoch="" # 50
 result_path = './test_result/%s.txt'%epoch
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--target_path', type=str, default='./results/%s/erase/'%epoch,
+parser.add_argument('--pre_path', type=str, default='./results/%s/erase/'%epoch,
                     help='results')
 parser.add_argument('--gt_path', type=str, default='./results/gt/',
                     help='labels')
@@ -105,7 +105,7 @@ def msssim(img1, img2):
     return np.prod(sign_mcs * mcs_power) * sign_mssim * mssim_power
 
 
-dataloader = DataLoader(Dataset(args.gt_path,None, args.target_path, mask_reverse=True, training=False))
+dataloader = DataLoader(Dataset(text_path=args.pre_path,mask_path=None, gt_path=args.gt_path, mask_reverse=True, training=False))
 
 for k, (img,lbl) in enumerate(dataloader):
     ##import pdb;pdb.set_trace()

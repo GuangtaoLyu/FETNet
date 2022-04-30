@@ -229,7 +229,6 @@ class ETSNetModel():
     def __cuda__(self, *args):
         return (item.to(self.device) for item in args)
 
-# python run.py  --text_root ../dataset/test/img --mask_root ../dataset/test/mask --gt_root ../dataset/test/inpaint --model_path_g ./checkpoint/g_995.pth  --model_path_d ./checkpoint/d_995.pth --result_save_path ./results/995  --test
+# python run.py  --text_root ./dataset/test/img --mask_root ./dataset/test/mask --gt_root ./dataset/test/inpaint --model_path_g ./checkpoint/g_995.pth  --model_path_d ./checkpoint/d_995.pth --result_save_path ./results/995  --test
 
-# python run.py --gt_root ~/下载/test/label --mask_root ~/下载/test/mask --text_root ~/下载/test/img  --model_path_g ./checkpoint/g_260.pth  --model_path_d ./checkpoint/d_260.pth --result_save_path ./results/260  --test
 
