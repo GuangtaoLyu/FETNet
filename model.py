@@ -36,7 +36,6 @@ class ETSNetModel():
         self.optm_G = optim.Adam(self.G.parameters(), lr=self.lr )
         self.optm_D = optim.Adam(self.D.parameters(), lr=2 * self.lr)
         self.adversarial_loss = AdversarialLoss()
-        self.TV_loss = TV_loss
         self.style_loss = style_loss
         self.l1_loss = l1_loss
         self.preceptual_loss = preceptual_loss
@@ -70,7 +69,6 @@ class ETSNetModel():
             self.device = torch.device("cpu")
 
     def adjust_learning_rate(self,optimizer, epoch):
-        """Sets the learning rate to the initial LR decayed by 10 every 30 epochs"""
         lr = self.lr * (0.5 ** (epoch // 8))
         for param_group in optimizer.param_groups:
             param_group['lr'] = lr
@@ -228,7 +226,3 @@ class ETSNetModel():
 
     def __cuda__(self, *args):
         return (item.to(self.device) for item in args)
-
-# python run.py  --text_root ./dataset/test/img --mask_root ./dataset/test/mask --gt_root ./dataset/test/inpaint --model_path_g ./checkpoint/g_995.pth  --model_path_d ./checkpoint/d_995.pth --result_save_path ./results/995  --test
-
-
