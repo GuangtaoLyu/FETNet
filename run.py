@@ -24,7 +24,6 @@ def run():
     torch.backends.cudnn.benchmark = True
 
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_id
-    # gpus = [int(i) for i in (''.join(args.gpu_id.split(',')))]
     model = ETSNetModel()
     if args.test:
         model.initialize_model(args.model_path_g, args.model_path_d,False)
@@ -38,8 +37,6 @@ def run():
         model.test(dataloader, args.result_save_path)
     else:
         model.initialize_model(args.model_path_g,args.model_path_d, True)
-        # model.G = torch.nn.DataParallel(model.G,device_ids=gpus)
-        # model.D = torch.nn.DataParallel(model.D,device_ids=gpus)
         model.cuda()
         dataloader = DataLoader(Dataset(args.text_root, args.mask_root, args.gt_root,mask_reverse = True), batch_size = args.batch_size, shuffle = True, num_workers = args.n_threads,drop_last=True,pin_memory=True)
         model.train(dataloader, args.model_save_path, args.finetune, args.num_epochs)
