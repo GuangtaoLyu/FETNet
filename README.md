@@ -38,6 +38,8 @@ python run.py  --text_root ./dataset/test/img --mask_root ./dataset/test/mask --
 
 ### Evaluation
 
+the evaluation metric reference to EraseNet(https://github.com/lcy0604/EraseNet/blob/master/evaluatuion.py)
+
 ```python
 python evaluation.py  
 ```
