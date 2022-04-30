@@ -25,7 +25,6 @@ def get_pad(in_,  ksize, stride, atrous=1):
     return int(((out_ - 1) * stride + atrous*(ksize-1) + 1 - in_)/2)
 
 class Down(nn.Module):
-    """Downscaling with maxpool then double conv"""
 
     def __init__(self, in_channels, out_channels,kernel_size=3,dilation=1,padding=1, use_res=False,down=True):
         super().__init__()
@@ -46,7 +45,6 @@ class Down(nn.Module):
 
 
 class Up(nn.Module):
-    """Upscaling then double conv"""
 
     def __init__(self, in_channels, out_channels,kernel_size=3, up=True):
         super().__init__()
