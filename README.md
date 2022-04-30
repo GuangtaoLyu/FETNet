@@ -44,7 +44,7 @@ python evaluation.py
 
 ### Pretrained models
 
-Yunpan : (link: 链接: https://pan.baidu.com/s/1sJ958iQslu1bcj-0g1P0YQ  password: 9ngk ) (Size = 443MB).
+Yunpan : (link: https://pan.baidu.com/s/1sJ958iQslu1bcj-0g1P0YQ  password: 9ngk ) (Size = 443MB).
 
 Google Driver: (link: https://drive.google.com/file/d/1uOvjtm2NMgRQpkOV9PHEZoFBPWow4GPM/view?usp=sharing (Size = 443MB).
 
