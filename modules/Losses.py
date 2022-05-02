@@ -64,12 +64,6 @@ def style_loss(A_feats, B_feats):
         loss_value = loss_value+torch.mean(torch.abs(A_style - B_style) / (c * w * h))
     return loss_value
 
-def TV_loss(x):
-    h_x = x.size(2)
-    w_x = x.size(3)
-    h_tv = torch.mean(torch.abs(x[:, :, 1:, :] - x[:, :, :h_x - 1, :]))
-    w_tv = torch.mean(torch.abs(x[:, :, :, 1:] - x[:, :, :, :w_x - 1]))
-    return h_tv + w_tv
 
 def preceptual_loss(A_feats, B_feats):
     r"""
