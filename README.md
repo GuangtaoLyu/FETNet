@@ -9,20 +9,10 @@ This Flickr-ST dataset is a real world dataset\cite{Scene Text Eraser} including
 
 ![avatar](./images/annotation.jpg)
 
-Yunpan : (link:  https://pan.baidu.com/s/1K3l_CQL3LjKxGvk4fayxkw  password: nofd) (Size = 701MB).
-
-Google Driver: (link: https://drive.google.com/file/d/1gUWkteBwgFGvY7z2sqAB96Dgjy8KqtwD/view?usp=sharing) (Size = 701MB).
-
 ### Requirements
 
 - PyTorch == 1.7.0(1.x)
-- CUDA 10.1 
-
-### Pretrained models
-
-Yunpan : (link: https://pan.baidu.com/s/1sJ958iQslu1bcj-0g1P0YQ  password: 9ngk ) (Size = 443MB).
-
-Google Driver: (link: https://drive.google.com/file/d/1uOvjtm2NMgRQpkOV9PHEZoFBPWow4GPM/view?usp=sharing (Size = 443MB).
+- CUDA 10.
 
 ### References
 
