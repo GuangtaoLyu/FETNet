@@ -13,36 +13,10 @@ Yunpan : (link:  https://pan.baidu.com/s/1K3l_CQL3LjKxGvk4fayxkw  password: nofd
 
 Google Driver: (link: https://drive.google.com/file/d/1gUWkteBwgFGvY7z2sqAB96Dgjy8KqtwD/view?usp=sharing) (Size = 701MB).
 
-
-
-### Implementation details
-
-We train FETNet on the training sets of SCUT-EnsText \cite{EnsNet}, SCUT-Syn and Flickr-ST, and evaluate them on their corresponding testing sets, respectively. The masks are generated through the subtraction from the input images and the corresponding labels. We follow  \cite{EraseNet} to apply data augmentation during training. The model is optimized using the Adam algorithm. The initial learning rate of generator is set to be 0.001, and the discriminator is 0.002. The learning rate decayed by 50\% every 8 epochs. Following the training procedures of GAN, we alternately train the generator and discriminator in a single NVIDIA GPU with batch size of 6 and input image size of 256x256.
-
 ### Requirements
 
 - PyTorch == 1.7.0(1.x)
 - CUDA 10.1 
-
-### Train
-
-```python
-python run.py  --text_root ./dataset/train/img --mask_root ./dataset/train/mask --gt_root ./dataset/train/inpaint --result_save_path ./results/xxx  
-```
-
-### Test
-
-```python
-python run.py  --text_root ./dataset/test/img --mask_root ./dataset/test/mask --gt_root ./dataset/test/inpaint --model_path_g ./checkpoint/xxx.pth  --model_path_d ./checkpoint/xxx.pth --result_save_path ./results/xxx  --test
-```
-
-### Evaluation
-
-the evaluation metric reference to EraseNet(https://github.com/lcy0604/EraseNet/blob/master/evaluatuion.py)
-
-```python
-python evaluation.py  
-```
 
 ### Pretrained models
 
