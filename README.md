@@ -59,6 +59,7 @@ https://github.com/neouyghur/One-stage-Mask-based-Scene-Text-Eraser
 
 https://github.com/clovaai/CRAFT-pytorch
 
+https://github.com/GuangtaoLyu/PSSTRNet
 
 ### References
 
@@ -90,4 +91,4 @@ If you have any questions, feel free to concat us or raise issues.
 Suggestions and opinions of our work (both positive and negative) are welcome. Please contact the authors by sending email to Guangtao Lyu(吕光涛)([1004392768@qq.com](mailto:1004392768@qq.com)) or  Anna Zhu([annazhu@whut.edu.cn](mailto:annazhu@whut.edu.cn))
 
 ## Acknowledgement
-This repository is maintained by [Guangtao Lyu(吕光涛)](https://github.com/GuangtaoLyu).
+This repository is maintained by [Guangtao Lyu(吕光涛)](https://github.com/GuangtaoLyu). 
