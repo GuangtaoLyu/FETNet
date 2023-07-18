@@ -2,7 +2,7 @@
 
 This is the official PyTorch codes for the paper.
 
-[[Arxiv Paper](https://arxiv.org/abs/2306.09593)]  [中文版 (TBD)] [[Project](https://guangtaolyu.github.io/projects/FETNet/index.html)]  [Weights: [baidu yunpan](https://pan.baidu.com/s/1BIBo3juC8mRH9dtgrMm_-A?pwd=kgee) (pwd:kgee)  [google_driver](https://drive.google.com/file/d/1mmx41ibyQiLR_duVn6LB3gZw9JcPu3LS/view?usp=drive_link)]
+[[Arxiv Paper](https://arxiv.org/abs/2306.09593)]  [中文版 (TBD)] [[Project](https://guangtaolyu.github.io/projects/FETNet/index.html)]  [Weights: [baidu yunpan](https://pan.baidu.com/s/13gvAu0eKTl4HbgLxKyTnKA?pwd=2kkw) (pwd:2kkw)  [google_driver](https://drive.google.com/file/d/1mmx41ibyQiLR_duVn6LB3gZw9JcPu3LS/view?usp=drive_link)]
 
 ![avatar](./images/FETNet.jpg)
 
